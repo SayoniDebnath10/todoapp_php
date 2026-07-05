@@ -28,7 +28,7 @@
                             <?php
 
                             require "db.php";
-                            $sql = "SELECT * FROM tasks ORDER BY id DESC";
+                            $sql = "SELECT * FROM tasks ORDER BY task_id DESC";
                             $result = mysqli_query($conn, $sql);
                             while ($row = mysqli_fetch_assoc($result)) {
                                 echo '
