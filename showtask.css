@@ -1,0 +1,144 @@
+.container{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    height: auto;
+    width: 100vw;
+    background-color: bisque; 
+}
+
+.showbox{
+ display: flex;
+ flex-direction: row;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    height: auto;
+    width: 40vw;
+    background-color: rgb(190, 138, 73); 
+     border: 2px solid maroon;
+    border-radius: 5px;
+
+}
+.head{
+ display: flex;
+     flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    height: auto;
+    width: 30vw;
+     border: 2px solid black;
+    border-radius: 5px;
+    background-color:rgba(83, 39, 39, 0.664); 
+}
+.showtask{
+
+ display: flex;
+  flex-direction: row;
+    margin:10;
+    padding:10px;
+    border: white;
+    border-radius: 5px;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    height: 80%;
+    width: 30%;
+    color: white;   
+}
+.showdiv{
+    list-style: none;
+    margin:5px;
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#deletebtn{
+    background-color: rgb(224, 121, 121);
+ color: rgb(1, 29, 1);
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 700;
+    margin:10px;
+
+
+}
+#updatebtn{
+background-color: rgb(163, 163, 247);
+ color: rgb(1, 29, 1);
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 700;
+    margin:10px;
+
+}
+
+#deletebtn:hover{
+transform: scale(1.2);
+background-color: rgb(173, 42, 42);
+color: white;
+}
+
+#updatebtn:hover{
+transform: scale(1.2);
+background-color:rgb(65, 65, 138) ;
+color: white;
+}
+
+#addbutton{
+
+    background-color: rgb(176, 235, 176);
+ color: rgb(1, 29, 1);
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+    margin:10px;
+}
+
+#addbutton:hover{
+transform: scale(1.2);
+background-color: rgb(34, 88, 34) ;
+ border: 2px solid white;
+color: white;
+}
+
+#showtaskheader{
+    margin:30px;
+    padding:10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    height: 20%;
+    width: 50%;
+    background-color: rgb(224, 133, 21);
+    color: white;   
+}
+
+.blink {
+  animation: blinkEffect 1s infinite;
+}
+
+@keyframes blinkEffect {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
