@@ -45,7 +45,7 @@ A traditional full-stack To-Do application built using PHP, MySQL, HTML and CSS.
 - MVC Architecture (Future)
 
 ## Live Demo
-https://sayobidebnath.infinityfree.me/todoapp_php/
+https://sayonidebnath.infinityfree.me/todoapp_php/
 
 ## Author
 **Sayoni Debnath**
