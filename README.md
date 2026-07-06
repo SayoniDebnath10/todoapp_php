@@ -22,27 +22,14 @@ A traditional full-stack To-Do application built using PHP, MySQL, HTML and CSS.
 - GitHub
 
 ## Database
-**Database Name:** `todoapp`
+**Database Name:** `todolist`
 
 **Table:** `tasks`
 
 | Column | Type |
 |---------|------|
-| id | INT (Primary Key, Auto Increment) |
-| task | VARCHAR(255) |
-
-## Project Structure
-```
-todoapp_php/
-│── index.php
-│── add.php
-│── update.php
-│── delete.php
-│── config.php
-│── style.css
-│── script.js
-│── README.md
-```
+| task_id | INT (Primary Key, Auto Increment) |
+| task_name | VARCHAR(255) |
 
 ## Upcoming Features
 - Responsive Design
@@ -58,7 +45,7 @@ todoapp_php/
 - MVC Architecture (Future)
 
 ## Live Demo
-Coming Soon
+https://sayobidebnath.infinityfree.me/todoapp_php/
 
 ## Author
 **Sayoni Debnath**
