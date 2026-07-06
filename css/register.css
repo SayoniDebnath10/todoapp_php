@@ -1,8 +1,7 @@
 main{
- flex-direction: row;
- justify-content: center;
- align-items: center;
- gap:60px;
+    text-align: center;
+
+
 }
 .wrapper{
     background-color:  rgba(14, 0, 0, 0.568);
@@ -15,16 +14,27 @@ justify-content: center;
 text-align: center;
 gap:40px;
 margin:20px;
-color:white;
 
 }
-h3{
-    color:rgb(211, 181, 145)
+label{
+    color:white;
 }
-
-#taskbox,#addbtn,#showbtn{
+div{
+    margin:20px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    align-items: left;
+    font-size: large;
+}
+#username,#usermail,#userpassword,#registerbtn{
 
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+}
+#registerbtn{
+    grid-column: span 2;
 }

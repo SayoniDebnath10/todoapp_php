@@ -1,0 +1,52 @@
+.wrapper{
+    background-color:  rgba(14, 0, 0, 0.568);
+    border:2px solid black;
+    width:80vw;
+    height: 70vh;
+display: flex;
+flex-direction: column;
+justify-content: center; 
+text-align: center;
+gap:40px;
+margin:20px;
+
+}
+.statistics{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(211, 181, 145) ;
+}
+.taskstatus{
+    display:grid;
+    justify-content: center;
+     grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    align-items: left;
+    font-size: large;
+    
+
+}
+.statuscard{
+ max-width: 400px;
+      min-height: 100px;
+      border: 2px solid white;
+      margin:10px;
+      padding: 5px;
+
+}
+.quicklinks{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    justify-content: space-evenly;
+}
+.linkbtn{
+    display:flex;
+    justify-content: space-evenly;
+    margin:10px;
+    padding:10px;
+    gap:10px;
+}

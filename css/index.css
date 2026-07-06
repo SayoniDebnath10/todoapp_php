@@ -1,105 +1,32 @@
-.window{
+ .introdiv{
+
     display: flex;
-    flex-direction: column;
-     justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    gap:100px;
+    justify-content:center ;
     text-align: center;
-    margin:0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: bisque;
-}
-.head{
-    color: white;
-
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin:0;
-    padding: 0;
-    height: 60vh;
-    width: 60vw;
-     border: 2px solid black;
-    border-radius: 5px;
-    background-color:rgba(83, 39, 39, 0.664); 
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    height:20vh;
-    width: 20vw;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: rgb(190, 148, 96);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-}
-.header{
-    margin:10;
-    padding:10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    width: 50%;
-    background-color: rgb(224, 133, 21);
-    color: white;   
 }
 
-#blink {
-  animation: blinkEffect 1s infinite;
-}
-
-@keyframes blinkEffect {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-.taskentry{
-    margin-top: 10px;
-    height:auto;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%
+main{
+ flex-direction: column;
+   
 
 
 }
-#taskbox{
-    margin:10px;
-    padding:10px;
+
+.wrapper{
+
+    background-color:  rgba(24, 1, 1, 0.568);
     border:2px solid black;
-    border-radius: 5px;
-}
-#addbtn{
-    color: rgb(1, 29, 1);
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: rgb(176, 235, 176);
-    font-weight: 700;
-    margin:10px;
-}
-#addbtn:hover{
-background-color: rgb(34, 88, 34);
-transform: scale(1.2);
-color: white;
+    width:80vw;
+    height: 70vh;
+display: flex;
+flex-direction: column;
+justify-content: center; 
+text-align: center;
+gap:40px;
+margin:20px;
 
 }
-/* #showbtn{
-    color: rgb(1, 29, 1);
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: rgb(231, 168, 168);
-    font-weight: 700;
-    margin:10px;
-}
-#showbtn:hover{
-background-color: rgb(209, 108, 108);
-} */
+
+   
