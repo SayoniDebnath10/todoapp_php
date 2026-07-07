@@ -10,20 +10,21 @@
                 <h3>Note Your Tasks</h3>
             </div>
             <div class="subcontainer2">
-                    <form action="../actions/managetask.php" method="POST">
-                        <input type="text" id="taskbox" name="taskbox" placeholder="enter your tasks!">
-                        <button type="submit" id="addbtn">ADD</button>
-                    </form>
+                <form action="../actions/managetask.php" method="POST">
+                    <input type="text" id="taskbox" name="taskbox" placeholder="enter your tasks!">
+                    <button type="submit" id="addbtn">ADD</button>
+                </form>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
-            <h2>Check Your Tasks? Click Here!
-                <form action="showtask.php" method="GET">
-                    <button id="showbtn">SHOW LIST</button>
-                </form>
-            </h2>
+            <h2>Quick Links</h2>
+                <a href="../actions/showtask.php"><button id="showbtn">SHOW LIST</button></a>
+                <a href="../home/dashboard.php"><button id="dashboardbtn">DASHBOARD</button></a>
+
+    
+        
         </div>
     </section>
 </main>

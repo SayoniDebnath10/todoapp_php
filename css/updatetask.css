@@ -1,5 +1,5 @@
 .container{
-   display: flex;
+display: flex;
     flex-direction: column;
      justify-content: center;
     align-items: center;
@@ -9,9 +9,11 @@
     height: 100vh;
     width: 100vw;
     background-color: bisque; 
+
 }
 
-.wrapper{ 
+.wrapper{
+
  display: flex;
      flex-direction: column;
      justify-content: center;
@@ -26,9 +28,9 @@
     background-color:rgba(83, 39, 39, 0.664); 
 
 }
-.header{
 
-    display: flex;
+.header{
+ display: flex;
     margin:10;
     padding:20px;
     border: 2px solid black;
@@ -39,7 +41,7 @@
     font-size: large;
     font-weight: 800;
     height: 3%;
-    width: 30%;
+    width: 20%;
     background-color: rgb(224, 133, 21);
     color: white;   
 }
@@ -52,63 +54,44 @@
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
-}
-.updatebody{
 
-     display: flex;
-    flex-direction: row;
+}
+
+.updatebox{
+    display: flex;
+    flex-direction: column;
     height:auto;
     justify-content: space-evenly;
     width: 50%;
      margin:10px;
-     margin-top: 4%;
     padding:20px;
-    border:2px solid maroon;
+    border:2px solid black;
     border-radius: 5px;
     background-color: rgb(241, 215, 175);
+
+
 }
 
-.addtask{
+#updatebox2{
 margin:10px;
     padding:10px;
     border:2px solid black;
     border-radius: 5px;
-    background-color: rgb(209, 163, 106);
-}
-.showtask{
-margin:10px;
-    padding:10px;
-    border:2px solid black;
-    border-radius: 5px;
-     background-color: rgb(209, 163, 106);
 
 }
 
-#addbutton{
-background-color: rgb(176, 235, 176);
+#updatebtn2{
+background-color: rgb(163, 163, 247);
  color: rgb(1, 29, 1);
     border: 2px solid black;
     border-radius: 5px;
     font-weight: 700;
     margin:10px;
+
 }
-#addbutton:hover{
+#updatebtn2:hover{
+
 transform: scale(1.2);
-background-color: rgb(34, 88, 34) ;
+background-color:rgb(65, 65, 138) ;
 color: white;
-
-}
-#showbtn2{
-background-color:rgb(185, 148, 185) ;
- color: rgb(1, 29, 1);
-    border: 2px solid black;
-    border-radius: 5px;
-    font-weight: 700;
-    margin:10px;
-}
-#showbtn2:hover{
-    transform: scale(1.2);
-background-color:rgb(158, 83, 158) ;
-color: white;
-
 }

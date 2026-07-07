@@ -1,6 +1,6 @@
 <?php include "../includes/header.php"; ?>
 <?php include "../includes/navbar.php"; ?>
-<link rel="stylesheet" href="../css/showtask.css">
+<link rel="stylesheet" href="../css/modifytask.css">
 <main>
     <section class="wrapper">
 
@@ -23,7 +23,13 @@
                             echo '
             <li class="showdiv">'
                                 . $row["task_name"] .
-             '</li>';
+                                '<form action="managetask.php" method="POST">
+                 <input type="hidden" value="' . $row["task_id"] . '" name="task_id">
+                 <button id="deletebtn">DELETE</button></form>
+                 <form action="updatetask.php" method="POST">
+                 <input type="hidden" value="' . $row["task_id"] . '" name="task_id">
+                 <button id="updatebtn">UPDATE</button></form>
+             </li>';
                         }
                         ?>
                     </ul>
@@ -33,9 +39,9 @@
         </div>
         <div class="container2">
             <div class="linkbtn">
-                <a href="../home/dashboard.php"><button id="dashboardbtn">DASHBOARD</button></a>
-                <a href="../actions/addtask.php"><button id="addbtn">ADD TASK</button></a>
-                <a href="../actions/logout.php"><button id="logoutbtn">LOGOUT</button></a>
+                <a href="../home/dashboard.php"><button id="dashboardbtn">Dashboard</button></a>
+                <a href="../actions/addtask.php"><button id="addbtn">Add Tasks</button></a>
+                <a href="../actions/logout.php"><button id="logoutbtn">Logout</button></a>
             </div>
         </div>
     </section>
