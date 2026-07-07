@@ -80,3 +80,41 @@ height:70px;
     border:2px solid white;
     border-radius: 5px;
 }
+#addbtn:hover{
+transform: scale(1.2);
+background-color: rgb(34, 88, 34) ;
+ border: 2px solid white;
+color: white;
+}
+#logoutbtn:hover{
+transform: scale(1.2);
+background-color: rgb(117, 48, 48) ;
+ border: 2px solid white;
+color: white;
+}
+
+#modifybtn:hover{
+transform: scale(1.2);
+background-color: rgb(161, 120, 44) ;
+ border: 2px solid white;
+color: white;
+}
+
+#showbtn:hover{
+transform: scale(1.2);
+background-color: rgb(36, 36, 90) ;
+ border: 2px solid white;
+color: white;
+}
+.statuscard:hover{
+
+    transform: scale(1.2);
+background-color: rgb(211, 181, 145);
+ border: 2px solid white;
+color: black;
+}
+.totaltasks:hover{
+transform: scale(1.2);
+color: rgb(211, 181, 145);
+
+}

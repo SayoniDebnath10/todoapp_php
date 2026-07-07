@@ -2,38 +2,33 @@
 <?php include "../includes/navbar.php"; ?>
 <link rel="stylesheet" href="../css/updatetask.css">
 
-    <?php
-    require "../includes/db.php";
-    if (isset($_POST["task_id"])) {
-        $taskid = $_POST["task_id"];
-    }
+<?php
+require "../includes/db.php";
+if (isset($_POST["task_id"])) {
+    $taskid = $_POST["task_id"];
+}
 
-    ?>
-
-
-
-    <div class="container">
-        <div class="wrapper">
-            <div class="header" id="blink">
+?>
+<main>
+    <section class="wrapper">
+        <div class="container1">
+            <div class="updateheader" id="blink">
                 <h3>Change Your Task</h3>
 
             </div>
-            <div class="updatebox">
-
-                <form method="POST" action="../actions/managetask.php">
-                    <input type="text" id="updatebox2" name="updatebox" placeholder="enter new task!">
-                    <input type="hidden" name="task_id" value=<?php echo $taskid ?>>
-                    <button type="submit" id="updatebtn2">UPDATE</button>
-                </form>
-
-            </div>
-
-
-
-
-
         </div>
+        <div class="container2">
 
-    </div>
+            <form method="POST" action="../actions/managetask.php">
+                <input type="text" id="updatebox" name="updatebox" placeholder="enter new task!">
+                <input type="hidden" name="task_id" value=<?php echo $taskid ?>>
+                <button type="submit" id="updatebtn">UPDATE</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+
+
 
 <?php include "../includes/footer.php"; ?>

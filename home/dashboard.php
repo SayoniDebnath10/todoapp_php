@@ -33,7 +33,7 @@
                 <a href="../actions/showtask.php"><button id="showbtn">Show Tasks</button></a>
                 <a href="../actions/addtask.php"><button id="addbtn">Add Tasks</button></a>
                 <a href="../actions/modifytask.php"><button id="modifybtn">Modify Tasks</button></a>
-                <a href="../actions/logout.php"><button id="logoutbtn">Logout</button></a>
+                <a href="../home/logout.php"><button id="logoutbtn">Logout</button></a>
 
             </div>
         </section>

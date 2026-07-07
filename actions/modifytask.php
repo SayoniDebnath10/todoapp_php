@@ -41,7 +41,7 @@
             <div class="linkbtn">
                 <a href="../home/dashboard.php"><button id="dashboardbtn">Dashboard</button></a>
                 <a href="../actions/addtask.php"><button id="addbtn">Add Tasks</button></a>
-                <a href="../actions/logout.php"><button id="logoutbtn">Logout</button></a>
+                <a href="../home/logout.php"><button id="logoutbtn">Logout</button></a>
             </div>
         </div>
     </section>

@@ -16,7 +16,7 @@
                 </div>
                 <div class="grid">
                     <label for="userpassword">Password</label>
-                    <input type="password" id="userpassword" name="userpassword" placeholder="Enter A Strong Password">
+                    <input type="password" id="userpassword" name="userpassword" placeholder="Enter Your Password">
                 </div>
                 <div class="grid">
                     <button type="submit" id="loginbtn">Login</button>

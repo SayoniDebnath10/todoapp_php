@@ -43,3 +43,37 @@ h3{
     border:2px solid white;
     border-radius: 5px;
 }
+#addbtn{
+
+
+}
+
+#addbtn{
+
+    background-color: rgb(176, 235, 176);
+ color: rgb(1, 29, 1);
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+    margin:10px;
+}
+
+#addbtn:hover{
+transform: scale(1.2);
+background-color: rgb(34, 88, 34) ;
+ border: 2px solid white;
+color: white;
+}
+#dashboardbtn:hover{
+transform: scale(1.2);
+background-color: rgb(218, 113, 27) ;
+ border: 2px solid white;
+color: white;
+}
+
+#showbtn:hover{
+transform: scale(1.2);
+background-color: rgb(36, 36, 90) ;
+ border: 2px solid white;
+color: white;
+}

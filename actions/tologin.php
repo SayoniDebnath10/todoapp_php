@@ -1,4 +1,5 @@
-<?php
+  <?php
+
 require "../includes/db.php";
 
 $usermail=$_POST["usermail"];
@@ -9,8 +10,10 @@ $result=$stmt->get_result();
 $row=$result->fetch_assoc();
 if(password_verify($_POST["userpassword"],$row["user_password"])){
     header("Location: ../home/dashboard.php");
+    exit();
 }else{
-    header("Location: ../home/login.php");
+    header("Location: ../home/logout.php");
+    exit();
 }
 
 

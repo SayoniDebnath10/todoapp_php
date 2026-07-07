@@ -35,7 +35,7 @@
             <div class="linkbtn">
                 <a href="../home/dashboard.php"><button id="dashboardbtn">DASHBOARD</button></a>
                 <a href="../actions/addtask.php"><button id="addbtn">ADD TASK</button></a>
-                <a href="../actions/logout.php"><button id="logoutbtn">LOGOUT</button></a>
+                <a href="../home/logout.php"><button id="logoutbtn">LOGOUT</button></a>
             </div>
         </div>
     </section>
