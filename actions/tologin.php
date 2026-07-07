@@ -10,7 +10,7 @@ $row=$result->fetch_assoc();
 if(password_verify($_POST["userpassword"],$row["user_password"])){
     header("Location: ../home/dashboard.php");
 }else{
-    header("LOcation: ../home/login.php");
+    header("Location: ../home/login.php");
 }
 
 
