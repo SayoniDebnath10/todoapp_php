@@ -21,16 +21,6 @@ A traditional full-stack To-Do application built using PHP, MySQL, HTML and CSS.
 - Git
 - GitHub
 
-## Database
-**Database Name:** `todolist`
-
-**Table:** `tasks`
-
-| Column | Type |
-|---------|------|
-| task_id | INT (Primary Key, Auto Increment) |
-| task_name | VARCHAR(255) |
-
 ## Upcoming Features
 - Responsive Design
 - Prevent Empty Task Submission
