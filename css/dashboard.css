@@ -11,6 +11,12 @@ gap:40px;
 margin:20px;
 
 }
+#dashboardbtn{
+ background-color: rgb(218, 113, 27);
+    color: white;
+    border:2px solid white;
+    border-radius: 5px;
+}
 .statistics{
     display:flex;
     flex-direction: column;
@@ -86,7 +92,7 @@ background-color: rgb(34, 88, 34) ;
  border: 2px solid white;
 color: white;
 }
-#logoutbtn:hover{
+.logoutbtn:hover{
 transform: scale(1.2);
 background-color: rgb(117, 48, 48) ;
  border: 2px solid white;

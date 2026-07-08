@@ -1,10 +1,11 @@
 <?php
+ include "../includes/auth.php";
 require "../includes/db.php";
 
-if (isset($_POST["taskbox"])) {
+ if (isset($_POST["taskbox"]) && !empty(trim($_POST["taskbox"]))) {
     $task = trim($_POST["taskbox"]);
-    $stmt = $conn->prepare("INSERT INTO tasks (task_name) VALUES (?)");
-    $stmt->bind_param("s", $task);
+    $stmt = $conn->prepare("INSERT INTO tasks (user_id,task_name) VALUES (?, ?)");
+    $stmt->bind_param("ss", $_SESSION["user_id"], $task,);
     if ($stmt->execute()) {
         header("Location: ../actions/addtask.php");
         exit;

@@ -1,3 +1,14 @@
+<?php
+ if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    } 
+ if (isset($_SESSION["user_id"])) {
+    header("Location: ../home/dashboard.php");
+    exit();
+}
+?>
+
+
 <?php include "../includes/header.php"; ?>
 <?php include "../includes/navbar.php"; ?>
 <link rel="stylesheet" href="../css/register.css">
@@ -23,7 +34,7 @@
                     <input type="password" id="userpassword" name="userpassword" placeholder="Enter A Strong Password">
                 </div>
                 <div class="grid">
-                    <button type="submit" id="registerbtn">Register</button>
+                    <button type="submit" class="registerbtn" >Register</button>
                 </div>
             </form>
         </div>

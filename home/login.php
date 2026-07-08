@@ -1,6 +1,18 @@
+<?php
+ if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    } 
+ if (isset($_SESSION["user_id"])) {
+    header("Location: ../home/dashboard.php");
+    exit();
+}
+?>
+
 <?php include "../includes/header.php"; ?>
  <?php include "../includes/navbar.php"; ?>
  <link rel="stylesheet" href="../css/login.css">
+
+
 
  <main>
 
@@ -19,7 +31,7 @@
                     <input type="password" id="userpassword" name="userpassword" placeholder="Enter Your Password">
                 </div>
                 <div class="grid">
-                    <button type="submit" id="loginbtn">Login</button>
+                    <button type="submit" class="loginbtn">Login</button>
                 </div>
             </form>
         </div>

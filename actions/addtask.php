@@ -1,5 +1,6 @@
 <?php include "../includes/header.php"; ?>
 <?php include "../includes/navbar.php"; ?>
+<?php include "../includes/auth.php"; ?>
 <link rel="stylesheet" href="../css/addtask.css">
 
 <main>
@@ -20,8 +21,8 @@
     <section>
         <div class="container">
             <h2>Quick Links</h2>
-                <a href="../actions/showtask.php"><button id="showbtn">SHOW LIST</button></a>
-                <a href="../home/dashboard.php"><button id="dashboardbtn">DASHBOARD</button></a>
+                <a href="../actions/showtask.php"><button id="showbtn">Show List</button></a>
+                <a href="../home/dashboard.php"><button class="dashboardbtn" id="dashboardbtn">Dashboard</button></a>
 
     
         

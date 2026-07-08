@@ -1,5 +1,6 @@
 <?php include "../includes/header.php"; ?>
 <?php include "../includes/navbar.php"; ?>
+<?php include "../includes/auth.php"; ?>
 <link rel="stylesheet" href="../css/updatetask.css">
 
 <?php

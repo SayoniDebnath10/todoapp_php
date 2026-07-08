@@ -29,16 +29,16 @@ div{
     align-items: left;
     font-size: large;
 }
-#username,#usermail,#userpassword,#registerbtn{
+#username,#usermail,#userpassword, .registerbtn{
 
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
 }
-#registerbtn{
+.registerbtn{
     grid-column: span 2;
 }
-#registerbtn:hover{
+.registerbtn:hover{
 
 transform: scale(1);
 background-color:rgb(158, 112, 42) ;

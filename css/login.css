@@ -24,16 +24,16 @@ label{
     align-items: left;
     font-size: large;
 }
-#usermail,#userpassword,#loginbtn{
+#usermail,#userpassword,.loginbtn{
 
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
 }
-#loginbtn{
+.loginbtn{
     grid-column: span 2;
 }
-#loginbtn:hover{
+.loginbtn:hover{
 
 transform: scale(1);
 background-color:rgb(158, 112, 42) ;

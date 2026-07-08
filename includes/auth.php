@@ -2,8 +2,8 @@
  if (session_status() === PHP_SESSION_NONE) {
         session_start();
     } 
-    $_SESSION=[];
-    session_destroy();
-    header("Location: ../home/index.php");
+
+if (!isset($_SESSION["user_id"])) {
+    header("Location: ../home/login.php");
     exit();
-?>
+}

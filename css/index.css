@@ -35,7 +35,7 @@ div{
     color: rgb(211, 181, 145);
 }
 
-#registerbtn{
+.registerbtn{
  background-color:rgb(83, 73, 58);
     color: white;
     border:2px solid white;
@@ -44,7 +44,7 @@ div{
 
 }
 
-#loginbtn{
+.loginbtn{
  background-color: rgb(83, 73, 58);
     color: white;
     border:2px solid white;
@@ -53,17 +53,16 @@ div{
 
 }
 
-#registerbtn:hover{
+.registerbtn:hover{
 
 transform: scale(1.2);
-background-color:rgb(158, 112, 42) ;
+background-color:rgb(212, 141, 35) ;
 color: white;
 }
 
-#loginbtn:hover{
+.loginbtn:hover{
 
 transform: scale(1.2);
-background-color:rgb(158, 112, 42) ;
+background-color:rgb(212, 141, 35) ;
 color: white;
 }
-   

@@ -117,7 +117,7 @@ height:70px;
     border:2px solid white;
     border-radius: 5px;
 }
-#dashboardbtn:hover{
+.dashboardbtn:hover{
 transform: scale(1.2);
 background-color: rgb(218, 113, 27) ;
  border: 2px solid white;
@@ -129,7 +129,7 @@ background-color: rgb(34, 88, 34) ;
  border: 2px solid white;
 color: white;
 }
-#logoutbtn:hover{
+.logoutbtn:hover{
 transform: scale(1.2);
 background-color: rgb(117, 48, 48) ;
  border: 2px solid white;
