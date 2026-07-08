@@ -18,11 +18,21 @@ if($row && password_verify($_POST["userpassword"],$row["user_password"])){
     session_regenerate_id(true);   
     $_SESSION["user_id"]=$row["user_id"];
     $_SESSION["user_name"]=$row["user_name"];
-    header("Location: ../home/dashboard.php");
-    exit();
-}else{
-    header("Location: ../home/login.php");
-    exit();
+
+    echo "<script>
+            alert('Login Successful!');
+            window.location.href='../home/dashboard.php';
+            
+          </script>";
+            exit();
+}
+else{
+   echo "<script>
+             alert('Login Failed, Try Again!');
+            window.location.href='../home/login.php';
+           
+          </script>";
+            exit(); 
 }
 
 

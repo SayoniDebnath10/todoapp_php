@@ -17,14 +17,21 @@ $userpassword=password_hash($_POST["userpassword"],PASSWORD_DEFAULT);
 $stmt=$conn->prepare("INSERT INTO users (user_name,user_mail,user_password) VALUES (?,?,?)");
 $stmt->bind_param("sss",$username,$usermail,$userpassword);
 if($stmt->execute()){
-    header("Location: ../home/login.php");
-    exit();
+
+ echo "<script>
+            alert('Registered successfully!');
+            window.location.href='../home/login.php';
+            
+          </script>";
+            exit();
 }else{
-    header("Location: ../home/register.php");
-    exit();
-}
+ echo "<script>
+             alert('Registration Failed, Try Again!');
+            window.location.href='../home/register.php';
+           
+          </script>";
+            exit();
 
 }
-
-
+}
 ?>
