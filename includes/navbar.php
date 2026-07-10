@@ -20,7 +20,7 @@
                   <button id="loginbtn">login</button>
               </a>
               <a href="../home/about.php">
-                  <button id="aboutbtn">About Us</button>
+                  <button id="aboutbtn">About</button>
               </a>
 
 

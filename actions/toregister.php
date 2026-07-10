@@ -20,6 +20,7 @@ $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     header("Location: ../home/register.php");
+    
     exit();
 } else {
 $userpassword=password_hash($userpassword,PASSWORD_DEFAULT);

@@ -22,7 +22,7 @@
 
                 </div>
                 <div>
-                    <p>Have an account?</p>
+                    <p>Already have an account?</p>
                     <a href="login.php"><button class="registerbtn">
                             login
                         </button></a>

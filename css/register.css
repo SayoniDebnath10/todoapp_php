@@ -6,28 +6,60 @@ main{
 .wrapper{
     background-color:  rgba(14, 0, 0, 0.568);
     border:2px solid black;
-    width:30vw;
-    height: 40vh;
+    height:60vh;
+    width:70vw;
+   
 display: flex;
 flex-direction: column;
 justify-content: center; 
+
 text-align: center;
 gap:40px;
 margin:20px;
 
 }
+@media screen and (max-width:768px){
+
+    .wrapper{
+        width:90%;
+        max-width: 90%;
+        height: 70%;
+        max-height: 70%;
+    }
+    .registerform{
+        display: flex;
+        flex-direction: column;
+        margin:5px;
+
+    
+
+        max-width:80%;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns:120px 1fr;
+        align-items: center;
+        margin-right:10px;
+        gap:10px;
+
+    }
+
+    .registerbtn{
+        grid-column: span 1;
+        width:auto;
+    }
+}
 label{
     color:white;
 }
-div{
-    margin:20px;
-}
+
 .grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:30px;
     align-items: left;
     font-size: large;
+    margin: 10px;
 }
 #username,#usermail,#userpassword, .registerbtn{
 
