@@ -27,14 +27,18 @@
                         $result = $stmt->get_result();
                         while ($row = mysqli_fetch_assoc($result)) {
                             echo '
-            <li class="showdiv">'
-                                . $row["task_name"] .
-                                '<form action="managetask.php" method="POST">
+            <li class="showdiv">
+            <form action="taskstatus.php" method=POST >
+            <input type="hidden" value="' . $row["task_id"] . '" name="task_id">
+                 <input type="checkbox" class="checkbox" name="completed" value="1">
+                 </form>
+                  <span class="taskname">'.$row["task_name"].' </span>
+                                <form action="managetask.php" method="POST">
                  <input type="hidden" value="' . $row["task_id"] . '" name="task_id">
-                 <button id="deletebtn">DELETE</button></form>
+                 <button id="deletebtn" class="deletebtn">DELETE</button></form>
                  <form action="updatetask.php" method="POST">
                  <input type="hidden" value="' . $row["task_id"] . '" name="task_id">
-                 <button id="updatebtn">UPDATE</button></form>
+                 <button id="updatebtn" class="updatebtn">UPDATE</button></form>
              </li>';
                         }
                         ?>
@@ -53,4 +57,5 @@
     </section>
 
 </main>
+<script src="../js/script.js"></script>
 <?php include "../includes/footer.php"; ?>

@@ -7,16 +7,22 @@ main{
     background-color:  rgba(14, 0, 0, 0.568);
     border:2px solid black;
     height:60vh;
-    width:70vw;
+    width:50vw;
    
 display: flex;
 flex-direction: column;
 justify-content: center; 
+align-items: center;
 
 text-align: center;
 gap:40px;
 margin:20px;
 
+}
+.registerform{
+    display:flex;
+    flex-direction: column;
+    max-width: 60%;
 }
 @media screen and (max-width:768px){
 

@@ -4,6 +4,7 @@ require "../includes/db.php";
 
 if (isset($_POST["taskbox"])) {
     $task = trim($_POST["taskbox"]);
+    
     if (empty($task)) {
         echo "<script>
             alert('Please Enter A task!');
@@ -23,9 +24,10 @@ if (isset($_POST["taskbox"])) {
           </script>";
             exit();
         } else {
+            $status="pending";
 
-            $stmt = $conn->prepare("INSERT INTO tasks (user_id,task_name) VALUES (?, ?)");
-            $stmt->bind_param("is", $_SESSION["user_id"], $task);
+            $stmt = $conn->prepare("INSERT INTO tasks (user_id,task_name,task_status) VALUES (?,?, ?)");
+            $stmt->bind_param("iss", $_SESSION["user_id"], $task,$status);
             if ($stmt->execute()) {
                 echo "<script>
             alert('Task added successfully!');
