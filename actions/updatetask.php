@@ -21,7 +21,7 @@ if (isset($_POST["task_id"])) {
         <div class="container2">
 
             <form method="POST" action="../actions/managetask.php">
-                <input type="text" id="updatebox" name="updatebox" placeholder="enter new task!">
+                <input type="text" id="updatebox" name="updatebox" autofocus placeholder="enter new task!">
                 <input type="hidden" name="task_id" value=<?php echo $taskid ?>>
                 <button type="submit" id="updatebtn">UPDATE</button>
             </form>

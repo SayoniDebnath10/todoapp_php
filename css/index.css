@@ -19,8 +19,8 @@ main{
 
     background-color:  rgba(24, 1, 1, 0.568);
     border:2px solid black;
-    max-width:80vw;
-    max-height: 70vh;
+    width:80vw;
+    height: 70vh;
 display: flex;
 flex-direction: column;
 justify-content: center; 

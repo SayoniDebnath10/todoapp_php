@@ -4,26 +4,27 @@ checkbox.forEach(function(value){
 
 
 value.addEventListener("change",function(event){
-    let taskname=event.target.nextElementSibling;
-    let parent=event.target.parentElement;
-    let deletebtn=parent.querySelector(".deletebtn");
-    let updatebtn=parent.querySelector(".updatebtn");
-    if(event.target.checked){
-        taskname.style.textDecoration="line-through";
-         deletebtn.style.display = "none";
-            updatebtn.style.display = "none";
+    event.target.form.submit();
+    // let taskname=event.target.nextElementSibling;
+    // let parent=event.target.closest(".showdiv");
+    // let deletebtn=parent.querySelector(".deletebtn");
+    // let updatebtn=parent.querySelector(".updatebtn");
+    // if(event.target.checked){
+    //     taskname.style.textDecoration="line-through";
+    //      deletebtn.style.display = "none";
+    //         updatebtn.style.display = "none";
 
-     }
-        else{
+    //  }
+    //     else{
 
-            taskname.style.textDecoration = "none";
+    //         taskname.style.textDecoration = "none";
 
-            deletebtn.style.display = "block";
-            updatebtn.style.display = "block";
+    //         deletebtn.style.display = "block";
+    //         updatebtn.style.display = "block";
 
 
 
-    }
+    // }
 
 
 

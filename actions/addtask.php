@@ -12,14 +12,14 @@
             </div>
             <div class="subcontainer2">
                 <form action="../actions/managetask.php" method="POST">
-                    <input type="text" id="taskbox" name="taskbox" placeholder="enter your tasks!">
+                    <input type="text" id="taskbox" name="taskbox" autofocus placeholder="enter your tasks!">
                     <button type="submit" id="addbtn">ADD</button>
                 </form>
             </div>
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container2">
             <h2>Quick Links</h2>
                 <a href="../actions/showtask.php"><button id="showbtn">Show List</button></a>
                 <a href="../home/dashboard.php"><button class="dashboardbtn" id="dashboardbtn">Dashboard</button></a>

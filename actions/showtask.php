@@ -9,7 +9,7 @@
             <div class="subcontainer1">
                 <div class="blink" id="showtaskheader">
                     <?php
-                    echo "Task List";
+                    echo "Pending Task";
                     ?>
                 </div>
             </div>
@@ -20,19 +20,65 @@
                         require "../includes/db.php";
                         $user_id = $_SESSION["user_id"];
 
-                        $stmt = $conn->prepare("SELECT * FROM tasks WHERE user_id = ? ORDER BY task_id DESC");
+                        $stmt = $conn->prepare("SELECT * FROM tasks WHERE user_id = ? AND task_status='pending' ORDER BY task_id DESC");
                         $stmt->bind_param("i", $user_id);
                         $stmt->execute();
 
                         $result = $stmt->get_result();
-                        while ($row = mysqli_fetch_assoc($result)) {
-                            echo '
+                        if (mysqli_num_rows($result) > 0) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+
+                                echo '
             <li class="showdiv">'
-                                . $row["task_name"] .
-                                '</li>';
+                                    . $row["task_name"] .
+                                    '</li>';
+                            }
+                        } else {
+                            echo '<span class="nocomplete">No Pending Task</span>';
                         }
                         ?>
                     </ul>
+                </div>
+
+            </div>
+            <div class="subcontainer1">
+
+                <div class="blink" id="showtaskheader">
+                    <?php
+                    echo "Completed Task";
+                    ?>
+                </div>
+            </div>
+            <div class="subcontainer2">
+
+                <div class="showtask">
+                    <ul>
+                        <?php
+                        require "../includes/db.php";
+                        $user_id = $_SESSION["user_id"];
+
+                        $stmt = $conn->prepare("SELECT * FROM tasks WHERE user_id = ? AND task_status='completed' ORDER BY task_id DESC");
+                        $stmt->bind_param("i", $user_id);
+                        $stmt->execute();
+
+                        $result = $stmt->get_result();
+                         if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+
+                                echo '
+            <li class="showdiv">'
+                                    . $row["task_name"] .
+                                    '</li>';
+                            }
+                        }else{
+                            echo '<span class="nocomplete">No Completed Task</span>';
+
+
+                        }
+                        ?>
+                    </ul>
+
+
                 </div>
 
             </div>
