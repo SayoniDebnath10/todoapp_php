@@ -5,28 +5,17 @@ checkbox.forEach(function(value){
 
 value.addEventListener("change",function(event){
     event.target.form.submit();
-    // let taskname=event.target.nextElementSibling;
-    // let parent=event.target.closest(".showdiv");
-    // let deletebtn=parent.querySelector(".deletebtn");
-    // let updatebtn=parent.querySelector(".updatebtn");
-    // if(event.target.checked){
-    //     taskname.style.textDecoration="line-through";
-    //      deletebtn.style.display = "none";
-    //         updatebtn.style.display = "none";
-
-    //  }
-    //     else{
-
-    //         taskname.style.textDecoration = "none";
-
-    //         deletebtn.style.display = "block";
-    //         updatebtn.style.display = "block";
-
-
-
-    // }
-
-
-
 });
+});
+
+let deleteaccountbtn=document.querySelector("#deleteaccountbtn");
+deleteaccountbtn.addEventListener("click",function(event){
+    event.preventDefault();
+    let decision=confirm("Are you sure of deleting this account permanently?");
+    if(decision){
+        event.target.form.submit();
+        
+    }
+
+
 });

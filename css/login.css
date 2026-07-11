@@ -1,11 +1,12 @@
 .wrapper{
     background-color:  rgba(14, 0, 0, 0.568);
     border:2px solid black;
-    width:30vw;
-    height: 40vh;
+    width:50vw;
+    height: 60vh;
 display: flex;
 flex-direction: column;
 justify-content: center; 
+align-items: center;
 text-align: center;
 gap:40px;
 margin:20px;

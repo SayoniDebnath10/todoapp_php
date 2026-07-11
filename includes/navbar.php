@@ -28,6 +28,9 @@
               <a href="../home/index.php">
                   <button id="homebtn">Home</button>
               </a>
+              <a href="../home/profile.php">
+                  <button id="profilebtn">Profile</button>
+              </a>
               <a href="../home/dashboard.php">
                   <button id="dashboardbtn">Dashboard</button>
               </a>
