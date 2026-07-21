@@ -24,11 +24,11 @@
 
                     <label for="usermail">Email</label>
 
-                    <input type="email" id="usermail" name="usermail" placeholder="Enter Your Email Address">
+                    <input type="email" required id="usermail" name="usermail" placeholder="Enter Your Email Address">
                 </div>
                 <div class="grid">
                     <label for="userpassword">Password</label>
-                    <input type="password" id="userpassword" name="userpassword" placeholder="Enter Your Password">
+                    <input type="password" required id="userpassword" name="userpassword" placeholder="Enter Your Password">
                 </div>
                 <div class="grid">
                     <button type="submit" class="loginbtn">Login</button>
