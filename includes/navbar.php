@@ -5,7 +5,7 @@
     } ?>
   <header>
       <nav>
-          <h1>To Do App</h1>
+          <h1>Task Flow</h1>
       </nav>
       <div class="navbar">
           <?php if (!isset($_SESSION["user_id"])) { ?>
